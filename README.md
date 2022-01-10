@@ -1,3 +1,7 @@
-# website-melody
+# website-melody - Учебный проект Glo Academy
+## Проект выполнил: Максим Гумбатов
 
-Интенсив Glo-Academy по верстке с использованием Figma.
+### Технологии:
+- html
+- css
+- javascript
