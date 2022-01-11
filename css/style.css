@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+    url("/fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("/fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
 }
@@ -48,4 +57,131 @@ body {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
+
+/* main */
+
+.main-line {
+  height: 55px;
+  background-color: #c4c4c4;
+  max-width: 1280px;
+  margin: auto;
+}
+.main {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+}
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #635854;
+  margin: 0;
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 116px 0;
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+.counter {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  color: #635854;
+}
+.button-primary {
+  border: none;
+  color: #fff;
+  background-color: #3596f5;
+  border-radius: 6px;
+  padding: 16px 36px;
+  cursor: pointer;
+}
+.home-image path {
+  opacity: 0;
+  cursor: pointer;
+}
+.home-image path:hover {
+  opacity: 1;
+}
+
+/* footer */
+
+.footer {
+  background-color: #d7d7d7;
+  height: 170px;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 56px;
+  border-top: 4px solid #3596f5;
+}
+.footer-navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+.footer-nav-contacts {
+  margin-left: 37px;
+}
+.footer-text {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #635854;
+  margin-bottom: 5px;
+}
+.footer-phone {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #635854;
+}
+.footer-nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 58px;
+  width: 125px;
+  height: 20px;
+  justify-content: space-between;
+}
+.footer-documents-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 496px;
+  justify-content: space-between;
+}
+.footer-document-menu-item-link {
+  color: #635854;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
 }
