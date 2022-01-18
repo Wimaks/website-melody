@@ -103,7 +103,7 @@ body {
 .counter-arrow-down {
   transform: rotateX(180deg);
 }
-.counter {
+.floor-counter {
   font-family: "Bebas Neue", sans-serif;
   font-size: 100px;
   color: #635854;
@@ -125,6 +125,111 @@ body {
 }
 path.current-floor {
   opacity: 1;
+}
+.modal {
+  position: fixed; /* фикс поз поверх всего */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s;
+}
+.is-open {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal-dialog {
+  max-width: 1000px;
+  min-height: 565px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+.modal-image {
+  background-color: #ebebeb;
+  width: 60%;
+  text-align: center;
+  padding: 50px;
+}
+.modal-title {
+  /* padding-top: 45px;
+  padding-bottom: 26px; */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.flats path {
+  opacity: 0;
+  cursor: pointer;
+}
+.flats path:hover {
+  opacity: 1;
+}
+path.current-flat {
+  opacity: 1;
+}
+.modal-info {
+  width: 40%;
+  padding: 50px 50px 62px 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 56px;
+}
+.flat-link {
+  text-decoration: none;
+  color: #635854;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+.flat-link.current-link {
+  text-decoration: underline;
+  color: #3596f5;
+}
+.flat-item {
+  padding-bottom: 10px;
+}
+.flat-link:hover {
+  text-decoration-line: underline;
+  color: #3596f5;
+}
+.first-flats {
+  text-decoration: underline;
+}
+.modal-alert {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+  margin: 0;
+}
+.modal-close-button {
+  position: absolute;
+  top: 38px;
+  right: 27px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
 }
 /* footer */
 

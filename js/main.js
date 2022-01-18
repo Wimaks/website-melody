@@ -3,7 +3,8 @@ $(document).ready(function () {
     let counterUp = $('.counter-up')
     let counterDown = $('.counter-down')
     let path = $('.home-image path');
-    
+    // Подсветка по наведению и передача в счетчик
+
     path.on('mouseover', function () {
         path.removeClass('current-floor');
         currentFloor = $(this).attr('data-floor');
@@ -28,4 +29,46 @@ $(document).ready(function () {
             $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor')
         }
     });
+
+    // Открытие окна выбора квартиры
+    let closeButton = $('.modal-close-button');
+    let closeButtonPrimary = $('.button-primary');
+    let modal = $('.modal');
+    let pathFlat = $('.flats path');
+    let flat = $('.flat-link');
+    let currentFlat = 1;
+
+    pathFlat.on('mouseover', function () {
+        flat.removeClass('current-link');
+        currentFlat = $(this).attr('data-flats');
+        $(`[data-flats=${currentFlat}]`).toggleClass('current-link');
+    });
+
+    pathFlat.mouseleave(function () { 
+        flat.removeClass('current-link');
+    });
+
+    flat.on('mouseover', function () {
+        pathFlat.removeClass('current-flat')
+        currentFlat = $(this).attr('data-flats')
+        $(`[data-flats=${currentFlat}]`).toggleClass('current-flat');
+    })
+
+    flat.mouseleave(function () { 
+        pathFlat.removeClass('current-flat');
+    });
+
+    path.on('click', function () {
+        modal.toggleClass('is-open')
+        // currentFloor = $(this).attr('data-floor');
+        // $('.modal-counter').text(currentFloor);
+    });
+
+    closeButtonPrimary.on('click', function () {
+        modal.toggleClass('is-open')
+    });
+
+    closeButton.on('click', function () {
+        modal.removeClass('is-open')
+    })
 });
