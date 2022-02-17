@@ -1,9 +1,14 @@
 $(document).ready(function () {
     let currentFloor = 2;
-    let counterUp = $('.counter-up')
-    let counterDown = $('.counter-down')
+    let counterUp = $('.counter-up');
+    let counterDown = $('.counter-down');
     let path = $('.home-image path');
-    // Подсветка по наведению и передача в счетчик
+    let menuButton = $('.menu-button');
+    let navbarPanel = $('.navbar-panel');
+
+    menuButton.on('click', function () {
+        navbarPanel.toggle('fast');
+    });
 
     path.on('mouseover', function () {
         path.removeClass('current-floor');
@@ -17,7 +22,7 @@ $(document).ready(function () {
             usCurrentFloor = currentFloor.toLocaleString('en-Us', { minimumIntegerDigits: 2, useGrouping: false }); //форматирование переменной так, чтобы всегда было минимум 2 цифры в числе, типа 01, а не 1
             $('.counter').text(usCurrentFloor);
             path.removeClass('current-floor');
-            $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor')
+            $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
         }});
 
     counterDown.on('click', function () {
@@ -26,7 +31,7 @@ $(document).ready(function () {
             usCurrentFloor = currentFloor.toLocaleString('en-Us', { minimumIntegerDigits: 2, useGrouping: false });
             $('.counter').text(usCurrentFloor);
             path.removeClass('current-floor');
-            $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor')
+            $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
         }
     });
 

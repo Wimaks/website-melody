@@ -16,42 +16,45 @@
   </head>
   <body>
     <header class="header">
-      <div class="navbar">
+      <div class="navbar container">
         <a href="index.html" class="logo">
           <img src="img/logo.svg" alt="Logo: ЖК Мелодия" />
         </a>
-        <nav class="navbar-nav">
-          <ul class="navbar-menu">
-            <li class="navbar-item">
-              <a href="#" class="navbar-link">Подобрать <br />квартиру</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="navbar-link">Забронировать <br />квартиру</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="navbar-link">Ход <br />строительства</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="navbar-link">Проектная <br />декларация</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- /.navbar-menu -->
-        <div class="navbar-contacts">
-          <span class="navbar-text">Закажите звонок:</span>
-          <a class="navbar-phone" href="tel:+78431234567">8 (843) 123-45-67</a>
+        <div class="navbar-panel">
+          <nav class="navbar-nav">
+            <ul class="navbar-menu">
+              <li class="navbar-item">
+                <a href="#" class="navbar-link">Подобрать <br />квартиру</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link">Забронировать <br />квартиру</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link">Ход <br />строительства</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-link">Проектная <br />декларация</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.navbar-menu -->
+          <div class="navbar-contacts">
+            <span class="navbar-text">Закажите звонок:</span>
+            <a class="navbar-phone" href="tel:+78431234567">8 (843) 123-45-67</a>
+          </div>
         </div>
         <!-- /.navbar-contacts -->
+        <button class="menu-button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </div>
       <!-- /.navbar -->
     </header>
-    <div class="main-line"></div>
-    <main class="main">
-      <div class="main-image">
+    <main class="main container">
         <svg
           class="home-image"
-          width="734"
-          height="640"
           viewBox="0 0 734 640"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +183,6 @@
             fill-opacity="0.75"
           />
         </svg>
-      </div>
       <div class="main-info">
         <h2 class="main-title">Выберите желаемый этаж</h2>
         <div class="counter-group">
@@ -227,8 +229,6 @@
           </h3>
           <svg
             class="flats"
-            width="433"
-            height="408"
             viewBox="0 0 433 408"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -369,73 +369,75 @@
     </div>
     <!-- /.modal -->
     <footer class="footer">
-      <div class="footer-navbar">
-        <div class="footer-nav">
-          <a class="footer-nav-logo" href="#">
-            <img
-              src="img/footer/footer-logo.svg"
-              alt="Логотип компании застойщика"
-            />
-          </a>
-          <div class="footer-nav-contacts">
-            <span class="footer-text">Закажите звонок:</span>
-            <a class="footer-phone" href="tel:+78431234567"
-              >8 (843) 123-45-67</a
-            >
+      <div class="footer-navbar container">
+        <div class="footer-nav-panel">
+          <div class="footer-nav">
+            <a class="footer-nav-logo" href="#">
+              <img
+                src="img/footer/footer-logo.svg"
+                alt="Логотип компании застойщика"
+              />
+            </a>
+            <div class="footer-nav-contacts">
+              <span class="footer-text">Закажите звонок:</span>
+              <a class="footer-phone" href="tel:+78431234567"
+                >8 (843) 123-45-67</a
+              >
+            </div>
+            <nav class="footer-nav-social">
+              <ul class="footer-nav-menu">
+                <li class="footer-nav-menu-item">
+                  <a href="#" class="footer-nav-menu-item-link">
+                    <img
+                      src="img/footer/facebook.svg"
+                      alt="Логотип facebook"
+                      class="footer-nav-menu-item-link-logo"
+                  /></a>
+                </li>
+                <li class="footer-nav-menu-item">
+                  <a href="#" class="footer-nav-menu-item-link"
+                    ><img
+                      src="img/footer/instagram.svg"
+                      alt="Логотип instagram"
+                      class="footer-nav-menu-item-link-logo"
+                  /></a>
+                </li>
+                <li class="footer-nav-menu-item">
+                  <a href="#" class="footer-nav-menu-item-link"
+                    ><img
+                      src="img/footer/twitter.svg"
+                      alt="Логотип twitter"
+                      class="footer-nav-menu-item-link-logo"
+                  /></a>
+                </li>
+                <li class="footer-nav-menu-item">
+                  <a href="#" class="footer-nav-menu-item-link"
+                    ><img
+                      src="img/footer/youtube.svg"
+                      alt="Логотип youtube"
+                      class="footer-nav-menu-item-link-logo"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="footer-nav-social">
-            <ul class="footer-nav-menu">
-              <li class="footer-nav-menu-item">
-                <a href="#" class="footer-nav-menu-item-link">
-                  <img
-                    src="img/footer/facebook.svg"
-                    alt="Логотип facebook"
-                    class="footer-nav-menu-item-link-logo"
-                /></a>
+          <div class="footer-documents">
+            <ul class="footer-documents-menu">
+              <li class="footer-documents-menu-item">
+                <a href="#" class="footer-document-menu-item-link"
+                  >Политика конфиденциальности</a
+                >
               </li>
-              <li class="footer-nav-menu-item">
-                <a href="#" class="footer-nav-menu-item-link"
-                  ><img
-                    src="img/footer/instagram.svg"
-                    alt="Логотип instagram"
-                    class="footer-nav-menu-item-link-logo"
-                /></a>
+              <li class="footer-documents-menu-item">
+                <a href="#" class="footer-document-menu-item-link"
+                  >Публичная оферта</a
+                >
               </li>
-              <li class="footer-nav-menu-item">
-                <a href="#" class="footer-nav-menu-item-link"
-                  ><img
-                    src="img/footer/twitter.svg"
-                    alt="Логотип twitter"
-                    class="footer-nav-menu-item-link-logo"
-                /></a>
-              </li>
-              <li class="footer-nav-menu-item">
-                <a href="#" class="footer-nav-menu-item-link"
-                  ><img
-                    src="img/footer/youtube.svg"
-                    alt="Логотип youtube"
-                    class="footer-nav-menu-item-link-logo"
-                /></a>
+              <li class="footer-documents-menu-item">
+                <a href="#" class="footer-document-menu-item-link">Контакты</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div class="footer-documents">
-          <ul class="footer-documents-menu">
-            <li class="footer-documents-menu-item">
-              <a href="#" class="footer-document-menu-item-link"
-                >Политика конфиденциальности</a
-              >
-            </li>
-            <li class="footer-documents-menu-item">
-              <a href="#" class="footer-document-menu-item-link"
-                >Публичная оферта</a
-              >
-            </li>
-            <li class="footer-documents-menu-item">
-              <a href="#" class="footer-document-menu-item-link">Контакты</a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>
